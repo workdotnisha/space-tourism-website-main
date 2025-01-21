@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./assets/destination/background-destination-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+@media (min-width: 768px){
+    body{
+        background: url("./assets/destination/background-destination-desktop.jpg");
+    }
+}

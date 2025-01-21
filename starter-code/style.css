@@ -8,6 +8,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin:0 auto;
 }
 .menu-icon .icon-close.hide{
     display: none;
@@ -26,6 +27,10 @@ nav{
     align-items: center;
     justify-content: space-between;
     margin: 2rem 0 2rem 2rem;
+}
+.menu-icon img{
+    margin-top: -1rem;
+    margin-left: -5rem;
 }
 nav ul{
     display: none;
