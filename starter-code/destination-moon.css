@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./assets/destination/background-destination-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    
+    overflow-x: hidden;
+}
+.menu-icon .icon-close.hide{
+    display: none;
+}
+.menu-icon .icon-hamburger.show{
+    display: block;
+}
+.menu-icon .icon-hamburger.hide{
+    display: none;
+}
+.menu-icon .icon-close.show{
+    display: block;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 2rem 2rem;
+}
+.menu-icon img{
+    margin-top: -1rem;
+    margin-left: -5rem;
+}
+nav ul{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 1rem 2rem;
+    background: white;
+    opacity: 0.8;
+}
+nav ul.active{
+    display: flex;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+main section p,
+main section h1{
+    text-align: start;
+    color: white;
+    /* margin: 2rem 0; */
+    font-size: 1.5rem;
+}
+main section h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+main section{
+    margin: 3rem auto;
+    justify-content: start;
+    width: 50%;
+}
+main section span{
+    color: #4F545C;
+    margin: 0 0.5rem;
+}
+
+main section h2{
+    font-size: 0.8rem;
+    /* margin: 2rem 0; */
+    text-transform: uppercase;
+    color: #E0E1E7;
+}
+section ul{
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    list-style: none;
+    gap: 2rem;
+}
+section ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+@media (min-width: 768px){
+    body{
+        background: url("./assets/destination/background-destination-desktop.jpg");
+        padding: 0 3rem;
+
+    }
+    main{
+        flex-direction: row;
+        margin: 0 2rem;
+    }
+    main section img{
+        width: 65%;
+        margin: 4rem;
+        border-radius: 0.5rem;
+    }
+    main section h2{
+        font-size: 1.5rem;
+        margin: 2rem 0;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        /* align-items: center; */
+        /* justify-content: center; */
+        top: 0%;
+        left: 40%;
+        padding: 2rem 1rem;
+        background:linear-gradient(to right, #212936, #131522) ;
+        opacity: 0.5;
+        gap: 2rem;
+        padding-left: 5rem;
+        margin: 2rem;
+        border-radius: 0.5rem;
+    }
+    .menu-icon{
+        display: none;
+    }
+}
