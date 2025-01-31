@@ -99,16 +99,16 @@ main section div a{
     nav ul a{
         color: white;
     }
-    main{
+    /* main{
         margin: 0 10rem;
-    }
+    } */
     main{
         display: flex;
         flex-direction: row;
     }
-    /* main section{
+    main section{
         width: 50%;
-    } */
+    }
     main section p,
     main section h1{
         font-size: 2rem;
